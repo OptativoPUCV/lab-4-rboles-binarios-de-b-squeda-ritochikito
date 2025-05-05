@@ -79,11 +79,6 @@ void eraseTreeMap(TreeMap *tree, void *key)
 
 Pair *searchTreeMap(TreeMap *tree, void *key)
 {
-    return NULL;
-}
-
-Pair *upperBound(TreeMap *tree, void *key)
-{
     TreeNode *aux = tree->root;
 
     while (aux != NULL)
@@ -102,6 +97,12 @@ Pair *upperBound(TreeMap *tree, void *key)
         }
     }
 
+    return NULL;
+    return NULL;
+}
+
+Pair *upperBound(TreeMap *tree, void *key)
+{
     return NULL;
 }
 
