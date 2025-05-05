@@ -84,6 +84,24 @@ Pair *searchTreeMap(TreeMap *tree, void *key)
 
 Pair *upperBound(TreeMap *tree, void *key)
 {
+    TreeNode *aux = tree->root;
+
+    while (aux != NULL)
+    {
+        if (aux->pair->key = key)
+        {
+            return aux->pair->value;
+        }
+        else if (aux->pair->key < key)
+        {
+            aux = aux->left;
+        }
+        else if (aux->pair->key > key)
+        {
+            aux = aux->right;
+        }
+    }
+
     return NULL;
 }
 
