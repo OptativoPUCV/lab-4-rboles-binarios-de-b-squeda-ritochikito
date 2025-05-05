@@ -92,11 +92,11 @@ Pair *upperBound(TreeMap *tree, void *key)
         {
             return aux->pair->value;
         }
-        else if (aux->pair->key < key)
+        else if (aux->pair->key > key)
         {
             aux = aux->left;
         }
-        else if (aux->pair->key > key)
+        else if (aux->pair->key < key)
         {
             aux = aux->right;
         }
