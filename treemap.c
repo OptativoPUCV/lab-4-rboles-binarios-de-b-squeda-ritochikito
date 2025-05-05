@@ -83,15 +83,15 @@ Pair *searchTreeMap(TreeMap *tree, void *key)
 
     while (aux != NULL)
     {
-        if (aux->pair->key == key)
+        if (key == aux->pair->key)
         {
             return aux->pair;
         }
-        else if (aux->pair->key > key)
+        else if (key < aux->pair->key)
         {
             aux = aux->left;
         }
-        else if (aux->pair->key < key)
+        else
         {
             aux = aux->right;
         }
