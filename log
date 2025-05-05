@@ -27,3 +27,16 @@ test.c:6:8: warning: '_strdup' redeclared without dllimport attribute: previous 
     6 | char * _strdup(const char * str) {
       |        ^~~~~~~
 35d9c32
+Sun, May  4, 2025 11:28:45 PM: 
+Compilation failed
+In file included from test.c:4:
+treemap.c: In function 'createTreeMap':
+treemap.c:51:5: error: 'new' undeclared (first use in this function)
+   51 |     new->lower_than = lower_than;
+      |     ^~~
+treemap.c:51:5: note: each undeclared identifier is reported only once for each function it appears in
+test.c: At top level:
+test.c:6:8: warning: '_strdup' redeclared without dllimport attribute: previous dllimport ignored [-Wattributes]
+    6 | char * _strdup(const char * str) {
+      |        ^~~~~~~
+4b3b0a0
